@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/my-card",
+	"version": "0.1.0",
+	"title": "My Card",
+	"category": "media",
+	"icon": "id",
+	"description": "A custom Gutenberg pad, built from the lessons on the 'Fellyph Cintra' youtube channel",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "my-card",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
