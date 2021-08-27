@@ -7,10 +7,41 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-my-card {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.my-card {
+  background-color: #ffd;
+  padding: 10px;
+  width: 525px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.my-card img {
+  width: 125px;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border-radius: 50%;
+  border: solid 2px #8a8;
+  background-color: #8a8;
+}
+.my-card .card-text {
+  padding: 5px 10px;
+  color: #222;
+}
+.my-card .card-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.my-card .card-text h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.my-card .card-text p {
+  font-size: 15px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

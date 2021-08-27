@@ -9,6 +9,18 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Willian Lira"
+		},
+		"avatarUrl": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".my-avatar",
+			"attribute": "src"
+		}
+	},
 	"textdomain": "my-card",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
