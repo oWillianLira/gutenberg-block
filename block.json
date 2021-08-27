@@ -11,16 +11,24 @@
 	},
 	"attributes": {
 		"title": {
-			"type": "string",
-			"default": "Willian Lira"
+			"type": "string"
 		},
-		"avatarUrl": {
+		"subtitle": {
 			"type": "string",
-			"source": "attribute",
-			"selector": ".my-avatar",
-			"attribute": "src"
+			"default": "Front-End Web Developer"
 		}
 	},
+	"styles": [
+		{
+			"name": "horizontal",
+			"label": "Horizontal",
+			"isDefault": true
+		},
+		{
+			"name": "vertical",
+			"label": "Vertical"
+		}
+	],
 	"textdomain": "my-card",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",

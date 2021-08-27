@@ -11,37 +11,13 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.my-card {
-	background-color: #ffd;
-	padding: 10px;
-	width: 525px;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	img {
-		width: 125px;
-		height: 125px;
-		object-fit: cover;
-		object-position: bottom;
-		border-radius: 50%;
-		border: solid 2px #8a8;
-		background-color: #8a8;
-	}
-	.card-text {
-		padding: 5px 10px;
-		color: #222;
-		h2 {
-			font-size: 24px;
-			font-weight: bold;
-			margin-bottom: 0;
-		}
-		h4 {
-			font-size: 18px;
-			margin-bottom: 20px;
-		}
-		p {
-			font-size: 15px;
-			margin: 0;
-		}
-	}
+.my-card-wp .card-text .rich-text {
+	border: dashed 1px #006ba1;
+	border-radius: 3px;
+	padding: 3px 5px;
+	margin: 5px 0;
+}
+
+.my-card-wp .card-text .rich-text:focus {
+	background-color: #006ba122;
 }

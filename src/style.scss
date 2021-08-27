@@ -5,10 +5,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.my-card {
+.my-card-wp {
 	background-color: #ffd;
 	padding: 10px;
 	width: 525px;
+	margin: 0 auto;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
@@ -26,16 +27,26 @@
 		color: #222;
 		h2 {
 			font-size: 24px;
-			font-weight: bold;
-			margin-bottom: 0;
+			margin: 0;
 		}
 		h4 {
 			font-size: 18px;
-			margin-bottom: 20px;
+			margin: 0;
 		}
 		p {
 			font-size: 15px;
-			margin: 0;
+			margin-top: 20px;
+		}
+	}
+}
+
+.is-style-vertical .my-card-wp {
+	flex-direction: column;
+	width: 275px;
+	.card-text {
+		text-align: center;
+		p {
+			text-align: left;
 		}
 	}
 }

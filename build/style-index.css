@@ -7,15 +7,16 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.my-card {
+.my-card-wp {
   background-color: #ffd;
   padding: 10px;
   width: 525px;
+  margin: 0 auto;
   border-radius: 5px;
   display: flex;
   align-items: center;
 }
-.my-card img {
+.my-card-wp img {
   width: 125px;
   height: 125px;
   -o-object-fit: cover;
@@ -26,22 +27,32 @@
   border: solid 2px #8a8;
   background-color: #8a8;
 }
-.my-card .card-text {
+.my-card-wp .card-text {
   padding: 5px 10px;
   color: #222;
 }
-.my-card .card-text h2 {
+.my-card-wp .card-text h2 {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-.my-card .card-text h4 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.my-card .card-text p {
-  font-size: 15px;
   margin: 0;
+}
+.my-card-wp .card-text h4 {
+  font-size: 18px;
+  margin: 0;
+}
+.my-card-wp .card-text p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.is-style-vertical .my-card-wp {
+  flex-direction: column;
+  width: 275px;
+}
+.is-style-vertical .my-card-wp .card-text {
+  text-align: center;
+}
+.is-style-vertical .my-card-wp .card-text p {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

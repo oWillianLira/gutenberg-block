@@ -11,7 +11,7 @@ import { __ } from "@wordpress/i18n";
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from "@wordpress/block-editor";
+import { useBlockProps, RichText } from "@wordpress/block-editor";
 import Avatar from "./components/avatar/Avatar";
 
 /**
@@ -26,16 +26,14 @@ import Avatar from "./components/avatar/Avatar";
 export default function save({ attributes }) {
 	return (
 		<article {...useBlockProps.save()}>
-			<div className="my-card">
+			<div className="my-card-wp">
 				<Avatar />
 				<div className="card-text">
-					<h2>{attributes.title}</h2>
-					<h4 className="">{__("Front-End Web Developer", "my-card")}</h4>
+					<RichText.Content tagName="h2" value={attributes.title} />
+					<RichText.Content tagName="h4" value={attributes.subtitle} />
 					<p>
-						{__(
-							"If you don't like WordPress, you're using it wrong!",
-							"my-card"
-						)}
+						"{__("If you don't like WordPress, you're using wrong!", "my-card")}
+						"
 					</p>
 				</div>
 			</div>

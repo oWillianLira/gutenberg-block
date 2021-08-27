@@ -11,7 +11,7 @@ import { __ } from "@wordpress/i18n";
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from "@wordpress/block-editor";
+import { useBlockProps, RichText } from "@wordpress/block-editor";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -30,21 +30,32 @@ import Avatar from "./components/avatar/Avatar";
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit({ attributes }) {
+export default function Edit({ attributes, setAttributes }) {
 	return (
 		<article {...useBlockProps()}>
-			<div className="my-card">
+			<div className="my-card-wp">
 				<Avatar />
 				<div className="card-text">
-					<h2>{attributes.title}</h2>
-					<h4>{__("Front-End Web Developer", "my-card")}</h4>
+					<RichText
+						tagName="h2"
+						value={attributes.title}
+						onChange={(newText) => {
+							setAttributes({ title: newText });
+						}}
+					/>
+					<RichText
+						tagName="h4"
+						value={attributes.subtitle}
+						onChange={(newText) => {
+							setAttributes({ subtitle: newText });
+						}}
+					/>
 					<p>
 						{__(
 							"If you don't like WordPress, you're using it wrong!",
 							"my-card"
 						)}
 					</p>
-					{attributes.avatarUrl}
 				</div>
 			</div>
 		</article>
