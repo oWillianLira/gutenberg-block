@@ -1,11 +1,12 @@
 <?php
 /**
  * Plugin Name:       My Card
- * Description:       Example block written with ESNext standard and JSX support – build step required.
+ * Description:       A custom Gutenberg pad, built from the lessons on the 'Fellyph Cintra' youtube channel
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Willian Lira
+ * Author URI:				https://owillianlira.com/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       my-card
